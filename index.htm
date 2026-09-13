@@ -8,8 +8,6 @@
 </head>
 <body>
 	<canvas id="Canvas" width="800" height="608"></canvas>
-  ctx.strokeStyle = "rgba(255,0,0,1)";
-  ctx.strokeRect(320, 320, 32, 32);
 
 	<script>
 
@@ -19,6 +17,8 @@
     const ctx = canvas.getContext("2d");
 
 	ctx.fillRect(64,96,32,16);
+  ctx.strokeStyle = "rgba(255,0,0,1)";
+  ctx.strokeRect(320, 320, 32, 32);
 
 	function game()
 	{
