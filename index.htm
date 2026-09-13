@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>코오딩</title>
-    </head>
-    <body>
-        <h1>이미지 표시</h1>
-        <img src="https://i.namu.wiki/i/ZfkV9Gs8tlRzhCGcAnJQvIa5MULwbG7F8HntVmET7Dey3rMB5GRq7_fvyI6bGoLPNaAz2TZej4TuRDARaEPDyg.webp" width="300" />
-        <p>이미지 표시용</p>
-    </body>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>숫자 증가 버튼</title>
+</head>
+<body>
 
+  <h1 id="number">0</h1>
+  <button onclick="increaseNumber()">+1</button>
+
+  <script>
+    let number = 0;
+
+    function increaseNumber() {
+      number++;
+      document.getElementById("number").textContent = number;
+    }
+  </script>
+
+</body>
 </html>
