@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>입력 내용 적용하기</title>
+    <meta charset="UTF-8">
+    <title> 군대에서 만든 게임 </title>
 </head>
 <body>
 
-  <input type="text" id="inputText" placeholder="내용을 입력하세요">
-  <button onclick="applyText()">적용</button>
+	<script>
 
-  <h2 id="result">여기에 입력한 내용이 표시됩니다.</h2>
+	let player_x=0;
+	const FPS=60;
 
-  <script>
-    function applyText() {
-      const text = document.getElementById("inputText").value;
-      document.getElementById("result").textContent = text;
-    }
-  </script>
+	function game()
+	{
+  		step();
+		draw();
+	}
+	function step()
+	{
+		player_x+=1;
+	}
+	function draw()
+	{
+		console.log(player_x);
+	}
+	setInterval(game,1000/FPS);
+
+	</script>
 
 </body>
-</html>
 </html>
